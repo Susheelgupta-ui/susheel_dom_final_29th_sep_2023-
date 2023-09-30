@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Welcome To Zombi Zone</title>
+    </head>
+    <body>
+        <!--Heading-->
+        <section>
+            <div class="header">
+                <h1>Welcome To Zombie Zone...</h1>
+
+                <div class="steps-container">
+                    <li>Click on the 1st image and register yourself enter your
+                        username, email & password.</li>
+                    <li>Now, click on the 2nd image to get your details.</li>
+                    <li>Click three times on the 3rd image if your score is
+                        greater than 10 then click on the next image.</li>
+                    <li>Finally, click on the 4th image and get a coupon.</li>
+                </div>
+
+            </div>
+
+            <div class="gallery">
+                <div id="image1" onclick="showForm()">
+                    <img
+                        src="./image/download.jpg"
+                        alt class="Zombie image" />
+                </div>
+                <div id="image2" onclick="showRegisteredUser()"><img
+                        src="./image/zombie2.png"
+                        alt class="Zombie image" /></div>
+                <div id="image3" onclick="rollDice()"><img
+                        src="./image/zombie 3.jpg"
+                        alt class="Zombie image" /></div>
+                <div id="image4" onclick="generateCoupon()"><img
+                        src="./image/zombie 4.jpg"
+                        alt class="Zombie image" /></div>
+            </div>
+
+        </section>
+
+        <!--Registration form-->
+        <div id="form-container">
+            <div id="registration-form">
+                <h1>Register Yourself</h1>
+                <form id="user-form">
+                    <input type="text" id="username" placeholder="Username"><br><br>
+                    <input type="email" id="email" placeholder="Email"><br><br>
+                    <input type="password" id="password" placeholder="Paassword"><br><br>
+                    <button type="button" onclick="registerUser()">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
